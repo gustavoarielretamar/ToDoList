@@ -1,38 +1,110 @@
+/* General styles */
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f2e7; /* Color de fondo neutro */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Encabezado */
+.App-theader {
+  width: 400px;
+  border-top: 2px solid #073752;
+  border-left: 2px solid #073752;
+  border-right: 2px solid #073752;
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #0e496b; /* Gris mate */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-theader h1 {
+  color: #f5f2e7;
+  padding: 16px;
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Formulario */
+.App-tbody {
+  width: 400px;
+  border-bottom: 2px solid #d2b48c;
+  border-left: 2px solid #d2b48c;
+  border-right: 2px solid #d2b48c;
+  border-radius: 0 0  8px 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #d8c3a5; /* Color de fondo del cuerpo */
+  font-size: 16px;
+  text-align: left;
+}
+
+/* Estilo del formulario en línea */
+form {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.input {
+  padding: 8px;
+  border: 1px solid #c2b280;
+  border-radius: 4px;
+  flex-grow: 1;
+  margin-right: 8px; /* Espacio entre input y botón */
+  font-size: 10px;
+}
+
+/* Lista */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-top: 1px solid #b2a38b;
+}
+
+/* Checkbox y botones */
+input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+button {
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+button.submit-btn {
+  background-color: rgb(182, 128, 75); /* Verde oliva oscuro */
+}
+
+button.edit-btn {
+  background-color: #a5a58d; /* Verde oliva claro */
+}
+
+button.delete-btn {
+  background-color: #a84d4f; /* Rojo tierra */
+}
+
+button.save-btn {
+  background-color: #8a817c; /* Gris tierra */
+}
+
+button:focus {
+  
 }
